@@ -1,0 +1,13 @@
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+
+
+.yardoc/*
+doc/*
+
+**/ignore/
+
