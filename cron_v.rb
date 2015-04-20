@@ -141,17 +141,3 @@ module Crontav
 
   end
 end
-
-########################################
-# main
-########################################
-if __FILE__ == $0
-
-sample_cron = [
-  "6-10,7,*/6 */4 * * * echo 123 > ~/foo.txt 2>&1",
-  "8,9,10     */8 * * * echo 456 > ~/bar.txt 2>&1",
-  "10,20        * * * * echo 789 > ~/baz.txt 2>&1"
-              ].join ?\n
-
-Crontav::Visualizer.new(sample_cron).show(60 * 60 * 3)
-end
